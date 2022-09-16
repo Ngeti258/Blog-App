@@ -8,7 +8,7 @@ posts=[
         'date_posted':'August 27 2018'
     },
     {
-        'author':'Jane Doe',
+        'author':'ReginaMW',
         'title':'Blog Post 2',
         'content':'second Post Content',
         'date_posted':'August 28 2018'
