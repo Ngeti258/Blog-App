@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
+DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -143,5 +144,5 @@ AWS_S3_FILE_OVERWRITE=False
 
 AWS_DEFAULT_ACL=None
 
-DEFAULT_FILE_STORAGE= 'storages.backends.s3boto3.s3boto3Storage'
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 
