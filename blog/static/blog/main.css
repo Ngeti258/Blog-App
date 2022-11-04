@@ -72,6 +72,7 @@ body {
     vertical-align: middle;
   }
   
+  
   .account-img {
     height: 125px;
     width: 125px;
@@ -81,4 +82,9 @@ body {
   
   .account-heading {
     font-size: 2.5rem;
+  }
+  #icon .bi   {
+    size: 50px;
+    padding: 2px;
+    cursor: pointer;
   }
