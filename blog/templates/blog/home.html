@@ -1,6 +1,10 @@
 {% extends  "blog/base.html"%}
 {% block content %}
     {%for post in posts%}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://use.fontawesome.com/your-embed-code.js"></script>
+
     <article class="media content-section">
       <img class='rounded-circle article-img'src="{{post.author.profile.image.url}}">
         <div class="media-body">
@@ -10,8 +14,18 @@
           </div>
           <h2><a class="article-title" href="{% url 'post-detail' post.id%}">{{ post.title }}</a></h2>
           <p class="article-content">{{ post.content }}</p>
+          <h6><div class="icons" >
+          <i class="fa bi bi-hand-thumbs-up" onclick="thumbsupClick(this)">Like</i>
+          <i class="fa bi bi-hand-thumbs-down">Dislike</i> 
+          <i class="fa bi bi-chat-left-dots">Comment</i>
+          <script >
+            thumbsupClick=(icon)=>{
+              icon.classList.toggle('fa bi bi-hand-thumbs-up-fill')
+          }
+          </script>
+        </div></h6>
         </div>
-      </article>
+       
         
     {% endfor %}
     {% if is_paginated %}
@@ -34,3 +48,5 @@
       {% endif %}
     {% endif %}
 {%endblock content%}
+     
+
