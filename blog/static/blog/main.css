@@ -44,7 +44,10 @@ body {
     color: #428bca;
     text-decoration: none;
   }
-  
+  .post p{
+    font-family: "Poppins",sans-serif;
+
+  }
   .article-content {
     white-space: pre-line;
   }
@@ -87,4 +90,8 @@ body {
     size: 50px;
     padding: 2px;
     cursor: pointer;
+  }
+  .post button{
+    padding: 10px;
+    background-color: #ff0268;
   }

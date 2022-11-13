@@ -7,18 +7,7 @@ DeleteView)
 from .models import Post
 from django.contrib.auth.models import User
 from django.contrib.auth.mixins import LoginRequiredMixin,UserPassesTestMixin
-import tkinter
-from django.shortcuts import render
-from django.http import HttpResponse
-from django.template import loader
 
-def drawchart():
-        root = tkinter.Tk() 
-        canvas = root.Canvas(root, width=400, height=500)
-        canvas.pack()
-        blackline = canvas.create_line (0, 0, 200, 0)
-        root.mainloop()
-        return blackline
 
 
 
