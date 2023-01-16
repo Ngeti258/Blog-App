@@ -43,7 +43,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'storages'
+    'storages',
+    # 'like_button',
+    # 'FACEBOOK_APP_ID=',
+    # 'FACEBOOK_SHOW_SEND=',
+    # 'FACEBOOK_LIKE_WIDTH=',
+    # 'FACEBOOK_FONTS=IU'
 ]
 
 MIDDLEWARE = [
