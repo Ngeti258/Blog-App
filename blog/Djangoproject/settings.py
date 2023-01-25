@@ -44,11 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'storages',
-    # 'like_button',
-    # 'FACEBOOK_APP_ID=',
-    # 'FACEBOOK_SHOW_SEND=',
-    # 'FACEBOOK_LIKE_WIDTH=',
-    # 'FACEBOOK_FONTS=IU'
+   
 ]
 
 MIDDLEWARE = [
@@ -85,10 +81,21 @@ WSGI_APPLICATION = 'Djangoproject.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#     }
+# }
+DATABASES={
+    'default':{
+        'ENGINE':'django.db.backends.postgresql_psycopg2',
+        'NAME':'dasg3qgh2qp697',
+        'USER':'ruvmotwevxyeoi',
+        'PASSWORD':'f60a9eefd3f920cdadec4ce96e043a9db8a68757c38ab1c978c629f848253fab',
+        'HOST':'ec2-3-217-251-77.compute-1.amazonaws.com',
+        'PORT':'5432',
+
     }
 }
 
